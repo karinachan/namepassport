@@ -1,0 +1,352 @@
+@media (min-width:1200px) {
+  #togg{
+    display: none;
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    color: black;
+    /*dark gray*/
+
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  color: black;
+  /*dark gray*/
+
+  font-family: Roboto, Helvetica;
+  font-size: 14px;
+}
+header {
+  background-color: #4D4D4D;
+  /* dark blue */
+
+  font-size: 20px;
+  padding: 2%;
+
+  color: white;
+  padding: 0.5%;
+  text-align: center;
+}
+
+
+div.transbox {
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */
+}
+div.transbox p {
+
+  font-weight: bold;
+  color: #000000;
+}
+h1 {
+  font-size: 7em;
+  margin:0;
+  padding: 0;
+  color: #4D4D4D;
+  padding: 2%;
+}
+#content {
+  min-height: 100%;
+  height: auto;
+  height: 100%;
+  margin: 0 auto;
+  /* the bottom margin is the negative value of the footer's         height */
+}
+
+p {
+  padding: 0.5%;
+}
+
+
+/*footer {
+
+
+
+ color: #aaa;
+
+ background-color: #333;
+
+ line-height: 30px;
+
+ padding: 3px;
+
+
+
+}*/
+
+video {
+  /* video border */
+
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* transitions applied to the video element */
+
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+audio {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* transitions applied to the video element */
+
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+button.back {
+  /*These lines override the previous styling of buttons*/
+
+  -webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+  width: 60px;
+  height: 30px;
+  /*These lines position the back button inside the header*/
+
+  position: absolute;
+  left: 16px;
+  top: 8px;
+}
+
+
+/* #Alizarin Flat Button
+==================================================*/
+
+.alizarin-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 30%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
+}
+.alizarin-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  padding: 1%;
+  background-color: #4D4D4D;
+}
+
+img{
+  float: right;
+  width: 50%;
+  margin:0;
+}
+
+.col{
+  text-align: center;
+}
+
+.black_overlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #4D4D4D;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+    .white_content {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        border: 16px solid #4D4D4D;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: #4D4D4D;
+
+    }
+
+
+
+ul {
+  float: right;
+  text-align: center;
+  display: inline;
+  margin: 0;
+  padding: 1.5%;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+
+}
+ul li{
+
+  display: inline-block;
+
+  position: relative;
+  padding: 15px 20px;
+
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
+  z-index: 100;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   display: block;
+
+}
+
+label {
+  display: block;
+  -webkit-appearance: push-button;
+  -moz-appearance: button;
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+
+input [type=checkbox]:checked ~ #drop{
+  display: none;
+}
+
+
+
+
+
+ul li:hover, ul li:active {
+  background-color: #b83c30;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+  width: 200%;
+
+}
+ul li ul li {
+  background: #555;
+  display: block;
+  text-shadow: 0 -1px 0 #000;
+
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
+}
+ul li ul li:hover, ul li ul li:active{
+
+background: #b83c30;
+}
+ul li:hover ul, ul li:active ul{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+#form{
+  padding: 2%;
+}
+
+#stuff{
+  padding: 2%;
+}
+
+#map{
+  width: 80%;
+}

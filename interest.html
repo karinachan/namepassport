@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="iphone.css" />
+  <link rel="apple-touch-icon" href="logo_57x57.png">
+  <link rel="apple-touch-startup-image" href="image_320x480.png">
+  <link rel="stylesheet" type="text/css" href="iphone.css" media="screen and (orientation:portrait)" />
+
+  <!-- <link rel="stylesheet" type="text/css" href="iphonelandscape.css" media="screen and (orientation:landscape)" />
+-->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-webapp-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title> I go to... </title>
+
+</head>
+
+<body>
+
+  <!-- HTML5 article tag for content -->
+
+  <div id="content">
+
+
+    <header>
+      <ul style="float: left;">
+        <a href="index.html">
+          <li class="first">Home</li>
+        </a>
+      </ul>
+      <!-- Navigation buttons -->
+      <!-- LI stands for list item -->
+      <ul>
+        <li class="first">Menu
+          <ul>
+
+            <a href="school.html">
+              <li>Schools
+              </li>
+            </a>
+
+            <a href="location.html">
+              <li>Locations
+
+              </li>
+            </a>
+            <a href="about.html">
+              <li>About me
+
+              </li>
+            </a>
+          </ul>
+        </li>
+
+
+      </ul>
+      <h4><br>
+</h4>
+    </header>
+    <div id="form">
+      <h1> What do you want to learn more about? </h1>
+      <form name="myForm" onsubmit="return validateForm();" method="post">
+        <select id="interestdropdown">
+          <option value="blank">---</option>
+        <option value="frisbee">Ultimate Frisbee</option>
+        <option value="hackathon">Hackathons</option>
+        <option value="eating">Food</option>
+      </select>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <footer>Karina &copy; 2014</footer>
+
+  </div>
+<script language="javascript" type="text/javascript" src="stand_alone.js"></script>
+</body>
+
+</html>
