@@ -1,4 +1,69 @@
-@media (min-width:1200px) {
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+    	width: 90% !important;
+    }
+    .icon{
+      width: 30%;
+      padding:5%;
+    }
+
+    .white_content {
+        display: none;
+        width:70%;
+        top: 18%;
+        left:5%;
+        padding: 16px;
+        border: 16px solid #4D4D4D;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+        font-family: Roboto, Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: #4D4D4D;
+
+    }
+
+    footer{
+      display:none;
+    }
+
+    #aboutmodal{
+      width:100%;
+      height:800px;
+    }
+
+    .alizarin-flat-button {
+      position: relative;
+      vertical-align: top;
+      width: 60%;
+      height: 60px;
+      padding: 0;
+      font-size: 22px;
+      color: white;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      background: #e74c3c;
+      border: 0;
+      border-bottom: 2px solid #db4334;
+      cursor: pointer;
+      -webkit-box-shadow: inset 0 -2px #db4334;
+      box-shadow: inset 0 -2px #db4334;
+    }
+}
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .icon{
+      width:10%;
+      padding:2%;
+    }
+
   #togg{
     display: none;
   }
@@ -9,10 +74,35 @@
     min-width: 100%;
     color: black;
     /*dark gray*/
-
+    background: url("pw_maze_white.png");
     font-family: Roboto, Helvetica;
     font-size: 14px;
   }
+
+  .alizarin-flat-button {
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+    height: 60px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #e74c3c;
+    border: 0;
+    border-bottom: 2px solid #db4334;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #db4334;
+    box-shadow: inset 0 -2px #db4334;
+  }
+  .alizarin-flat-button:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
 }
 
 html,
@@ -22,7 +112,7 @@ body {
   min-width: 100%;
   color: black;
   /*dark gray*/
-
+  background: url("pw_maze_white.png");
   font-family: Roboto, Helvetica;
   font-size: 14px;
 }
@@ -31,10 +121,9 @@ header {
   /* dark blue */
 
   font-size: 20px;
-  padding: 2%;
 
   color: white;
-  padding: 0.5%;
+
   text-align: center;
 }
 
@@ -56,13 +145,6 @@ h1 {
   padding: 0;
   color: #4D4D4D;
   padding: 2%;
-}
-#content {
-  min-height: 100%;
-  height: auto;
-  height: 100%;
-  margin: 0 auto;
-  /* the bottom margin is the negative value of the footer's         height */
 }
 
 p {
@@ -163,13 +245,9 @@ footer {
   bottom: 0;
   position: fixed;
   padding: 1%;
-  background-color: #4D4D4D;
-}
-
-img{
-  float: right;
-  width: 50%;
-  margin:0;
+  text-align:center;
+  background-color: #ff5b57;
+  z-index:10000;
 }
 
 .col{
@@ -192,60 +270,21 @@ img{
     .white_content {
         display: none;
         position: absolute;
-        top: 25%;
-        left: 25%;
+        top: 15%;
+        left: 23%;
+
         width: 50%;
-        height: 50%;
         padding: 16px;
         border: 16px solid #4D4D4D;
         background-color: white;
         z-index:1002;
         overflow: auto;
-        font-family: Helvetica, sans-serif;
+        font-family: Roboto, Helvetica, sans-serif;
         font-size: 1.5em;
         color: #4D4D4D;
 
     }
 
-
-
-ul {
-  float: right;
-  text-align: center;
-  display: inline;
-  margin: 0;
-  padding: 1.5%;
-  list-style: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-
-
-}
-ul li{
-
-  display: inline-block;
-
-  position: relative;
-  padding: 15px 20px;
-
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #e74c3c;
-  border: 0;
-  border-bottom: 2px solid #db4334;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #db4334;
-  box-shadow: inset 0 -2px #db4334;
-  z-index: 100;
-}
 
 input[type=checkbox] {
    position: absolute;
@@ -269,54 +308,6 @@ input [type=checkbox]:checked ~ #drop{
 
 
 
-
-ul li:hover, ul li:active {
-  background-color: #b83c30;
-}
-
-ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  right: 0;
-
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-  width: 200%;
-
-}
-ul li ul li {
-  background: #555;
-  display: block;
-  text-shadow: 0 -1px 0 #000;
-
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #e74c3c;
-  border: 0;
-  border-bottom: 2px solid #db4334;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #db4334;
-  box-shadow: inset 0 -2px #db4334;
-}
-ul li ul li:hover, ul li ul li:active{
-
-background: #b83c30;
-}
-ul li:hover ul, ul li:active ul{
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 
 a:link {
     text-decoration: none;
@@ -349,4 +340,63 @@ a:active {
 
 #map{
   width: 80%;
+}
+
+h1{
+  font-size:47px;
+}
+
+
+img{
+  width:50%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+html,
+body {
+		font-family: 'Roboto', sans-serif;
+		background: #eee;
+		height: 100%;
+		width: 100%;
+
+		margin: 0;
+		color: #2E2E3C;
+		line-height: 24px;
+		-webkit-font-smoothing: antialiased;
+}
+
+
+
+#circle{
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-size: 280px;
+  background-position: right;}
+
+
+
+#intro{
+  display:none;
+}
+#content{
+  display:none;
+}
+
+#timeline{
+  display:block;
+}
+
+
+.btn, .btn:hover, .btn:active, .btn:visited, .btn:link{
+  background-color:#e74c3c;
+}
+
+.menu{
+  padding:1%;
+  text-align:center;
+}
+
+#timeline{
+  bottom:0px;
 }

@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="iphone.css" />
+
   <link rel="apple-touch-icon" href="logo_57x57.png">
   <link rel="apple-touch-startup-image" href="image_320x480.png">
   <link rel="stylesheet" type="text/css" href="iphone.css" media="screen and (orientation:portrait)" />
@@ -16,108 +16,91 @@
   <meta name="apple-mobile-webapp-status-bar-style" content="black">
 
   <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Karina's Name Passport</title>
+
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Compiled and minified CSS -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="iphone.css" />
+  <title>Karina Chan</title>
 
 </head>
 
 <body>
 
-  <!-- HTML5 article tag for content -->
-
-  <div id="content">
-
-<header><br></header>
-    <!--
-    <header>Karina's Name Passport</header>
--->
-    <!-- Wellesley image
-
-    <img id="selfie" src="karina.jpg" width="320" />
-
- H1 means 1st level heading -->
- <div class="col">
- <img src="karina.jpg" alt="my face"/>
- </div>
-
-<h1 id="scroller"></h1>
-
-
-
-
-    <!-- P stands for paragraph -->
-
-
-    <div class="col">
-
-      <div class="one-third column">
-        <p>
-          <a href="school.html">
-            <input type="submit" value="school" class="alizarin-flat-button">
-          </a>
-        </p>
-      </div>
-      <div class="one-third column">
-        <p>
-          <a href="location.html">
-            <input type="submit" value="location" class="alizarin-flat-button">
-          </a>
-        </p>
-      </div>
-      <div class="one-third column">
-        <p>
-          <a href="interest.html">
-            <input type="submit" value="interests" class="alizarin-flat-button">
-          </a>
-        </p>
-      </div>
-      <div class="one-third column">
-        <p>
-<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-            <input type="submit" value="aboutme" class="alizarin-flat-button">
-</a>
-
-<div id="light" class="white_content"><a href = "javascript:void(0)" style="float: right;" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[x]</a>
-  I'm a junior at Wellesley College majoring in Computer Science. I'm currently taking Human-COmputer Interaction, Theory of Programming Languages, Histories and Theories of Games and Play, and Economics 101. I'm also organizing the Wellesley and Simmons hackathon, happening over the weekend of April 17-19th, 2015. Feel free to contact me.
-
-
+<div id="intro">
+<div class="col">
+  <h1 id="scroller"></h1>
+  <img id="circle" src="karina.jpg">
 </div>
 
-<div id="fade" class="black_overlay"></div>
-        </p>
+</div>
+<!-- about Trigger -->
+<div class="menu">
+  <button data-target="aboutmodal" class="btn modal-trigger">About</button>
+  <!-- projects timeline hide -->
+    <button id="toggle" class="btn" onclick="showIframe();">Main site</button></div>
 
-      </div>
-    </div>
+    <div id="content">
+      <div class="menu">
+
+            <a href="https://twitter.com/kaykaychan" alt="follow me on twitter"><img class="icon" src="twitter.svg"></a>
+             <a href="https://www.linkedin.com/in/karinachan" alt="connect with me on linkedin"><img class="icon" src="linkedin.svg"></a>
+            <a href="https://github.com/karinachan" alt="check out my github"><img class="icon" src="github.svg"></a>
+    </div></div>
 
 
-
-    <!-- Navigation buttons
-
-    <nav id="main_nav">
-
-      <ul>
-
-
-
-        <li><a href="location.html">Locations</a>
-        </li>
-
-        <li><a href="school.html">Schools</a>
-        </li>
-
-        <li><a href="interest.html">Interests</a>
-        </li>
-
-      </ul>
-
-    </nav>
-  -->
-
+    <footer><div>Karina &copy; 2015 // Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div></footer>
+<!-- Modal Structure -->
+<div id="aboutmodal" class="modal">
+  <div class="modal-content">
+    <h5>I'm a senior at Wellesley College</h5>
+    <p>	The first CS class I took was CS118 Creating Computing in Python. Since then, I've taken a lot of cool classes and am currently taking Computational Biology and Data Visualization.
+    I play ultimate frisbee, and I enjoy going to hackathons. <hr>I'm looking for full-time software engineering roles right now. Check out my resume.<br>
+    <div style="text-align:center;"><a class="btn" href="karinaResume.pdf">TA-DA!</a></div>
   </div>
+</div>
 
-    <footer>Karina &copy; 2014</footer>
+<!-- projects section, can i fit a slick thing inside?-->
+
+
+<!-- Modal Structure -->
+
+<div id="timeline">
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12imfCaogUWlIU5jTal-tylWxJtnOl28wsm5OzQLqgiM&font=Fjalla-Average&lang=en&initial_zoom=1&height=650' width='100%' height='650' frameborder='0'></iframe>
+</div>
+
+<!-- https://docs.google.com/spreadsheets/d/12imfCaogUWlIU5jTal-tylWxJtnOl28wsm5OzQLqgiM/pubhtml -->
+
 <script type="text/javascript">
+
+var toggle='showing';
+function showIframe(){
+  if (toggle==='showing'){
+  document.getElementById('intro').style.display="block";
+  document.getElementById('content').style.display="block"
+  document.getElementById('timeline').style.display="none";
+
+  toggle='hidden';
+  document.getElementById('toggle').innerHTML="Projects";
+
+} else {
+  document.getElementById('content').style.display="none"
+  document.getElementById('timeline').style.display="block";
+  document.getElementById('intro').style.display="none";
+  toggle='showing';
+  document.getElementById('toggle').innerHTML="Main site";
+}
+}
+
 function scroll(position) {
-var msg = "I'm Karina.";
+var msg = "hi, i'm karina.";
 var out = ""; <!-- the initial message -->
 var sc = document.getElementById("scroller");
 for (var i=0; i < position; i++){ <!--append each char to out -->
@@ -131,13 +114,22 @@ window.setTimeout(function() { scroll(position); }, 150);
 <!-- if the position is not eq to mes.length, there are still characters, print out at 100 speed-->
 }
 else {
-window.setTimeout(function() { scroll(0); }, 20000);
+window.setTimeout(function() { scroll(0); }, 1000);
 <!-- otherwise, once message length= position, then end and pause for 20000 for time out-->
 }
 }
 
 scroll(0);
 </script>
+<script>
+
+
+$(document).ready(function(){
+   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+   $('.modal-trigger').leanModal();
+ });
+</script>
+
 </body>
 
 </html>
