@@ -389,7 +389,7 @@ body {
 
 
 .btn, .btn:hover, .btn:active, .btn:visited, .btn:link{
-  background-color:#e74c3c;
+  background-color:#e74c3c !important;
 }
 
 .menu{
