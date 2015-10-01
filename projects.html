@@ -13,7 +13,6 @@
   <script language="javascript" type="text/javascript" src="stand_alone.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="iphonelandscape.css" media="screen and (orientation:landscape)" />
   -->
-
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <meta name="apple-mobile-webapp-status-bar-style" content="black">
@@ -37,27 +36,18 @@
 
 <body>
 
-<div id="intro">
-<div class="col">
-  <h1 id="scroller"></h1>
-  <img id="circle" src="karina.jpg">
-</div>
-
 </div>
 <!-- about Trigger -->
 <div class="menu">
   <button data-target="aboutmodal" class="btn modal-trigger">About</button>
   <!-- projects timeline hide -->
-    <a href="projects.html" class="btn">Projects</a></div>
+    <button id="toggle" class="btn"><a href="index.html">Main</button>
+    </div>
 
-    <div id="content">
-      <div class="menu">
-
-            <a href="https://twitter.com/kaykaychan" alt="follow me on twitter"><img class="icon" src="twitter.svg"></a>
-             <a href="https://www.linkedin.com/in/karinachan" alt="connect with me on linkedin"><img class="icon" src="linkedin.svg"></a>
-            <a href="https://github.com/karinachan" alt="check out my github"><img class="icon" src="github.svg"></a>
-    </div></div>
-
+    <div class="iconset">
+    <a href="https://twitter.com/kaykaychan" alt="follow me on twitter"><img class="icon" src="twitter.svg"></a>
+     <a href="https://www.linkedin.com/in/karinachan" alt="connect with me on linkedin"><img class="icon" src="linkedin.svg"></a>
+    <a href="https://github.com/karinachan" alt="check out my github"><img class="icon" src="github.svg"></a></div>
 
     <footer><div>Karina &copy; 2015 // Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div></footer>
 <!-- Modal Structure -->
@@ -65,35 +55,19 @@
   <div class="modal-content">
     <h5>I'm a senior at Wellesley College</h5>
     <p>	The first CS class I took was CS118 Creating Computing in Python. Since then, I've taken a lot of cool classes and am currently taking Computational Biology and Data Visualization.
-    I play ultimate frisbee, and I enjoy going to hackathons.<hr>I'm looking for full-time software engineering roles right now. Check out my resume.<br>
+    I play ultimate frisbee, and I enjoy going to hackathons. <hr>I'm looking for full-time software engineering roles right now. Check out my resume.<br><br>
     <div style="text-align:center;"><a class="btn" id="resume" href="http://karinachan.github.io/namepassport/karinaResume.pdf" download="http://karinachan.github.io/namepassport/karinaResume.pdf" target="_blank">TA-DA!</a></div>
   </div>
 </div>
 
-<!-- projects section, can i fit a slick thing inside?-->
-<script type="text/javascript">
-function scroll(position) {
-var msg = "hi, i'm karina.";
-var out = ""; <!-- the initial message -->
-var sc = document.getElementById("scroller");
-for (var i=0; i < position; i++){ <!--append each char to out -->
-out += msg.charAt(i);
-}
-out += msg.charAt(position);
-sc.innerHTML = "<br>"+ out;
-position++; <!-- increment position each time -->
-if (position != msg.length) {
-window.setTimeout(function() { scroll(position); }, 150);
-<!-- if the position is not eq to mes.length, there are still characters, print out at 100 speed-->
-}
-else {
-window.setTimeout(function() { scroll(0); }, 1000);
-<!-- otherwise, once message length= position, then end and pause for 20000 for time out-->
-}
-}
 
-scroll(0);
-</script>
+
+<!-- Modal Structure -->
+
+<div id="timeline">
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12imfCaogUWlIU5jTal-tylWxJtnOl28wsm5OzQLqgiM&font=Fjalla-Average&lang=en&initial_zoom=1&height=650' width='100%' height='650' frameborder='0'></iframe>
+</div>
+
 <script>
 
 
@@ -116,7 +90,7 @@ $(document).ready(function(){
 
 // Using jQuery Event API v1.3
 $('#resume').on('click', function() {
-  ga('send', 'event', 'button', 'download', 'resumemain');
+  ga('send', 'event', 'button', 'download', 'resumeprojects');
 }); </script>
 </body>
 

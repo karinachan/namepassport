@@ -7,7 +7,7 @@
     	width: 90% !important;
     }
     .icon{
-      width: 30%;
+      width: 25%;
       padding:5%;
     }
 
@@ -54,6 +54,58 @@
       box-shadow: inset 0 -2px #db4334;
     }
 }
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+    	width: 90% !important;
+    }
+    .icon{
+      width: 10%;
+      padding:2%;
+
+    }
+
+    .white_content {
+        display: none;
+        width:70%;
+        top: 18%;
+        left:5%;
+        padding: 16px;
+        border: 16px solid #4D4D4D;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+        font-family: Roboto, Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: #4D4D4D;
+
+    }
+
+
+    .alizarin-flat-button {
+      position: relative;
+      vertical-align: top;
+      width: 60%;
+      height: 60px;
+      padding: 0;
+      font-size: 22px;
+      color: white;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      background: #e74c3c;
+      border: 0;
+      border-bottom: 2px solid #db4334;
+      cursor: pointer;
+      -webkit-box-shadow: inset 0 -2px #db4334;
+      box-shadow: inset 0 -2px #db4334;
+    }
+}
+
+
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
@@ -375,19 +427,6 @@ body {
   background-position: right;}
 
 
-
-#intro{
-  display:none;
-}
-#content{
-  display:none;
-}
-
-#timeline{
-  display:block;
-}
-
-
 .btn, .btn:hover, .btn:active, .btn:visited, .btn:link{
   background-color:#e74c3c !important;
 }
@@ -397,6 +436,6 @@ body {
   text-align:center;
 }
 
-#timeline{
-  bottom:0px;
+.iconset{
+  text-align: center;
 }
